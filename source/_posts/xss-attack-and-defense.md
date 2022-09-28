@@ -47,7 +47,8 @@ date: 2019-06-02 11:43:29
 
 首先，要成功实施跨站脚本攻击，我们需要了解一下存储型跨站的主要业务流程
 
-![business-process](57250\business-process.png)
+<div style="width:100%;height:100%;text-align:center;font-size: 0;"><img src="57250\business-process.png"/></div>
+<!-- ![business-process](./xss-attack-and-defense/business-process.png) -->
 
 根据上图业务流程，存储型`XSS`攻击有两个重点的步骤：信息入库处理、出库处理，结合`XSS`攻击的特性可知，`XSS`攻击成功必须要满足以下四个条件：
 
@@ -97,7 +98,8 @@ fclose($cookietxt);     //关闭文件
 
 攻击者发布存在恶意代码的链接将一直存在该网站，而普通用户并不知道该链接存在恶意代码，所以当普通用户点击该链接后，攻击者将窃取敏感信息。
 
-![cookie](57250\cookie.jpg)
+<div style="width:100%;height:100%;text-align:center;font-size: 0;"><img src="57250\cookie.jpg"/></div>
+<!-- ![cookie](./xss-attack-and-defense/cookie.jpg) -->
 
 上图所示均为攻击者收集敏感信息站点所收集到的用户`cookie`信息，攻击者可采用此敏感信息进行伪登录，从而获取更多用户信息。
 
